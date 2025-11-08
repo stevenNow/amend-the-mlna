@@ -1,0 +1,33 @@
+/* 🔑 CRITICAL: These directives inject all of Tailwind's CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Now, load your custom font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Add the other global styles you identified */
+
+/* CSS Variables */
+:root {
+    --color-primary: #1E40AF; /* Blue-700 */
+    --color-secondary: #059669; /* Green-600 */
+}
+
+/* Global Base Styles (Keep your overrides) */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Slate-50 */
+    color: #1f2937; /* text-gray-800 */
+    padding-top: 4rem; /* pt-16 */
+}
+
+/* Reusable Utility Classes */
+.card-shadow {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link.active {
+    color: white;
+    background-color: var(--color-secondary);
+}
