@@ -3,9 +3,8 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomeView from './components/views/HomeView';
-import StoryView from './components/views/StoryView';
+import IncidentsView from './components/views/IncidentsView';
 import ProposalsView from './components/views/ProposalsView';
-import IdeasView from './components/views/IdeasView';
 import './styles.css'; // Import the custom styles
 
 const App = () => {
@@ -28,8 +27,8 @@ const App = () => {
                 return <StoryView />;
             case 'proposals':
                 return <ProposalsView />;
-            case 'ideas':
-                return <IdeasView />;
+            case 'incidents':
+                return <IncidentsView />;
             case 'home':
             default:
                 return <HomeView />;

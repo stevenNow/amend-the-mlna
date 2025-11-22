@@ -1,13 +1,66 @@
-// src/components/views/HomeView.js
 import React from 'react';
 
+// --- 1. Updated Static Survey Data ---
+const surveyData = [
+    // Consolidated "Yes" votes for the largest impact bar
+    { label: 'Yes (22 lots)', percent: 68.75, color: 'bg-green-600', text: 'text-green-600' },
+    
+    // Remaining categories
+    { label: 'Maybe (4 lots)', percent: 12.5, color: 'bg-yellow-400', text: 'text-yellow-400' },
+    { label: 'No Response (6 lots)', percent: 18.75, color: 'bg-gray-400', text: 'text-gray-400' },
+];
+
+// --- 2. Bar Chart Component ---
+const SurveyBarChart = () => (
+    <div className="bg-white p-6 rounded-2xl card-shadow mb-12 border border-gray-100">
+        <h3 className="text-2xl font-bold text-gray-800 mb-4 border-b pb-2 text-center">
+            Homeowner Support for Rental Amendments
+        </h3>
+        {/* Updated summary text to reflect actual data */}
+        <p className="text-gray-600 mb-6 text-center">
+            "Would you support updating HOA bylaws for rental properties to protect neighborhood safety, maintain property values, and ensure consistent rule enforcement?"
+        </p>
+        
+        <div className="space-y-4">
+            {surveyData.map((item, index) => (
+                <div key={item.label} className="flex items-center">
+                    {/* Label Column (25% width) */}
+                    <div className="w-1/4 text-sm font-medium text-gray-700 pr-4">
+                        {item.label} {/* Show only the label (Yes, Maybe, No) */}
+                    </div>
+                    
+                    {/* Bar and Percentage Column (75% width) */}
+                    <div className="w-3/4 flex items-center">
+                        {/* The Bar */}
+                        <div className="h-4 flex-grow rounded-full overflow-hidden bg-gray-200 mr-3">
+                            <div 
+                                style={{ width: `${item.percent}%` }}
+                                className={`h-full ${item.color} transition-all duration-700 ease-out`}
+                            ></div>
+                        </div>
+                        
+                        {/* Percentage Text */}
+                        <div className={`text-base font-bold w-12 ${item.text} text-right`}>
+                            {item.percent}%
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+        <p className="text-xs text-gray-500 mt-4 text-right">
+            Survey based on 32 total lots.
+        </p>
+    </div>
+);
+
+// --- 3. HomeView Component (Updated) ---
 const HomeView = () => (
     <section id="home-view">
-        {/* Advocacy Header */}
+        {/* Advocacy Header (No change) */}
         <div className="bg-blue-600 text-white py-12 px-4 sm:px-6 lg:px-8 text-center rounded-2xl mb-10">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl sm:text-5xl font-extrabold mb-3 leading-tight">
-                    Preserve Mallard Lake. Protect Our Future. Amend the Bylaws.
+                    Preserve Mallard Lake with Rental Amendments.
                 </h2>
                 <p className="text-xl opacity-90 mt-4 max-w-2xl mx-auto">
                     Secure our property values and preserve the quality of life in our community.
@@ -15,9 +68,14 @@ const HomeView = () => (
             </div>
         </div>
 
-        <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Preserve Mallard Lake with Rental Amendments</h3>
+        {/* 🚀 NEW SURVEY BAR CHART SECTION 🚀 */}
+        <SurveyBarChart />
+        {/* End New Section */}
 
-        {/* Pillars Grid */}
+        <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Why Rental Amendments?</h3>
+
+
+        {/* Pillars Grid (No change below this line) */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Pillar 1: Financial Protection */}
             <div className="bg-white p-6 rounded-2xl card-shadow border-t-4 border-blue-500 hover:shadow-xl transition duration-300">
@@ -65,32 +123,6 @@ const HomeView = () => (
             </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="max-w-4xl mx-auto text-center mt-12 pt-8">
-            <div className="bg-indigo-50 p-8 rounded-2xl shadow-lg border border-indigo-200">
-                <h3 className="text-3xl font-extrabold text-indigo-800 mb-4">What You Can Do: Take Action to Preserve MLNA</h3>
-                <p className="text-xl text-gray-700 mb-6 font-medium">
-                    We have the power to amend our Declaration and safeguard the community's future. The process is clear and simple:
-                </p>
-                <ul className="space-y-3 text-left inline-block">
-                    <li className="text-lg text-gray-800 font-semibold flex items-center">
-                        <span className="flex-shrink-0 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">1</span>
-                        Draft the necessary legal amendments and language.
-                    </li>
-                    <li className="text-lg text-gray-800 font-semibold flex items-center">
-                        <span className="flex-shrink-0 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">2</span>
-                        Achieve the required Two-Thirds (2/3) affirmative vote from the membership.
-                    </li>
-                    <li className="text-lg text-gray-800 font-semibold flex items-center">
-                        <span className="flex-shrink-0 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">3</span>
-                        Record the approved amendments with the county to make them official and legally binding.
-                    </li>
-                </ul>
-                <p className="text-2xl font-extrabold text-blue-700 mt-6">
-                    Preserve What Makes Us Unique—Protect What Comes Next.
-                </p>
-            </div>
-        </div>
     </section>
 );
 

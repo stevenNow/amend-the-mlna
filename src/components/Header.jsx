@@ -4,9 +4,8 @@ import React from 'react';
 const Header = ({ activeView, setActiveView }) => {
     const navItems = [
         { id: 'home', label: 'Rentals' },
-        { id: 'story', label: 'Story' },
         { id: 'proposals', label: 'Proposals' },
-        { id: 'ideas', label: 'Ideas' },
+        { id: 'incidents', label: 'Incidents' },
     ];
 
     const handleClick = (viewId) => {
