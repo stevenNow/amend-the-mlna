@@ -4,32 +4,17 @@ import React from 'react';
 const committeeMembers = [
     {
         name: "Steve Nowicki",
-        bio: "Steve is a 4-year resident who lives on Murray Ct. He acts as committee lead.",
-        imageUrl: "https://placehold.co/100x100/4f46e5/ffffff?text=ET"
+        title: "Committee Lead",
+        bio: "Steve is a 4-year resident who lives on Murray Ct., with his wife Tracey and their 3 children. He acts as committee lead and current serves as MLNA Treasurer.",
+        imageUrl: "https://placehold.co/100x100/4f46e5/ffffff?text=SN"
     },
     {
-        name: "Andrew",
+        name: "Andrew A.",
+        title: "Comittee Advisor",
         bio: "Andrew.",
-        imageUrl: "https://placehold.co/100x100/10b981/ffffff?text=SC"
+        imageUrl: "https://placehold.co/100x100/10b981/ffffff?text=AA"
     },
-    {
-        name: "Marcus Jones",
-        title: "Communications Lead, Outreach & Education",
-        bio: "Marcus has lived in the community for eight years and works in corporate communications. He is responsible for clear and timely communication with all homeowners, organizing the survey data, and leading the neighborhood outreach efforts.",
-        imageUrl: "https://placehold.co/100x100/ef4444/ffffff?text=MJ"
-    },
-    {
-        name: "Jennifer Lee",
-        title: "Lot Survey & Data Coordinator",
-        bio: "Jennifer brings a background in project management. She manages the lot survey process, ensuring that all data is collected and verified accurately. Her goal is to ensure every lot owner's voice is represented in the final vote count.",
-        imageUrl: "https://placehold.co/100x100/f59e0b/ffffff?text=JL"
-    },
-    {
-        name: "David Smith",
-        title: "Community Preservation & Bylaw Specialist",
-        bio: "A lifelong resident, David is passionate about protecting the natural elements of Mallard Lake, particularly the lakefront areas. He provides historical context on previous bylaw changes and advocates for preservation clauses in the amendments.",
-        imageUrl: "https://placehold.co/100x100/06b6d4/ffffff?text=DS"
-    }
+    
 ];
 
 const CommitteeView = () => (
