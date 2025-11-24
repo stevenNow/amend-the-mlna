@@ -5,15 +5,15 @@ const committeeMembers = [
     {
         name: "Steve Nowicki",
         title: "Committee Lead",
-        bio: "Steve is a 4-year resident who lives on Murray Ct., with his wife Tracey and their 3 children. He acts as committee lead and current serves as MLNA Treasurer.",
+        bio: "Steve has lived in Mallard Lake North, with his wife Tracey and their 3 children, for 4 years. He currently volunteers as MLNA Treasurer.",
         imageUrl: "https://placehold.co/100x100/4f46e5/ffffff?text=SN"
     },
-    {
-        name: "Andrew A.",
-        title: "Comittee Advisor",
-        bio: "Andrew.",
-        imageUrl: "https://placehold.co/100x100/10b981/ffffff?text=AA"
-    },
+    // {
+    //     name: "Andrew A.",
+    //     title: "Comittee Advisor",
+    //     bio: "Andrew.",
+    //     imageUrl: "https://placehold.co/100x100/10b981/ffffff?text=AA"
+    // },
     
 ];
 
@@ -42,7 +42,7 @@ const CommitteeView = () => (
                             <span className="font-semibold text-blue-600">Research & Draft:</span> To thoroughly research the legal and financial implications of rental restrictions and regulations, and to draft clear, enforceable bylaw amendments that protect the interests of owner-occupants.
                         </li>
                         <li>
-                            <span className="font-semibold text-blue-600">Educate & Communicate:</span> To provide all homeowners with transparent, factual information regarding the amendments, the process, and the data supporting these changes (like the lot survey).
+                            <span className="font-semibold text-blue-600">Educate & Communicate:</span> To provide all homeowners with transparent, factual information regarding the amendments, the process, and the data supporting these changes.
                         </li>
                         <li>
                             <span className="font-semibold text-blue-600">Faciliate Legal Review:</span> To present reccommendations to the MLNA for final review, before our requirements are formally submitted to an attorney.
@@ -52,7 +52,7 @@ const CommitteeView = () => (
             </div>
 
             {/* Committee Members Section */}
-            <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">Meet the Committee Members</h2>
+            {/* <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">Meet the Committee Members</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {committeeMembers.map((member) => (
@@ -74,7 +74,7 @@ const CommitteeView = () => (
                         </p>
                     </div>
                 ))}
-            </div>
+            </div> */}
 
         </div>
     </div>
