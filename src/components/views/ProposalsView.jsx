@@ -25,7 +25,15 @@ const ProposalsView = () => (
                 <div className="text-4xl mb-4 text-green-600">📋</div>
                 <h4 className="text-xl font-bold mb-3">Option 2 - Regulate Rentals</h4>
                 <p className="text-gray-600">
-                    Our Board can adopt reasonable regulations to improve rental relations. Regulations can be enforced through fines.
+                    Our Board can adopt reasonable regulations to improve rental relations. Regulations can be enforced through fines. Fines can recur on a daily basis until conduct is corrected.
+                </p>
+                <br/>
+                <p className="text-gray-600">
+                    Unpaid fines can be enforced via:
+                    <ul className="list-disc list-inside text-sm text-gray-600 mt-3 space-y-1">
+                    <li><b>Liens:</b> Unpaid fines can enable liens on homes which must be paid before sale of the home.</li>
+                    <li><b>Eviction:</b> Article X Section 15 of our current bylaws can enable eviction of homeowners and/or tenants.</li>
+                    </ul>
                 </p>
                 <br/>
                 <p>
@@ -34,6 +42,7 @@ const ProposalsView = () => (
                 <ul className="list-disc list-inside text-sm text-gray-600 mt-3 space-y-1">
                     <li><b>Tenant Accountability:</b> Homeowners are responsible for tenant violations and must correct them within a specified timeframe.</li>
                     <li><b>Tenant Acknowledgment of Rules:</b> Tenants must acknowledge receipt and understanding of HOA rules prior to move-in.</li>
+                    <li><b>HOA Orientation Requirement:</b> New tenants must complete an HOA orientation session within 30 days of move-in to learn about community rules and expectations.</li>
                     <li><b>Homeowner Contact Requirement:</b> Homeowners must provide a 24/7 contact for tenant-related issues.</li>
                     <li><b>Tenant Emergency Contact Update:</b> Homeowners must provide updated tenant emergency contacts.</li>
                     <li><b>Tenant Move-In/Move-Out Notification:</b> Homeowners must notify the HOA 30 days prior to tenant changes.</li>
@@ -41,6 +50,15 @@ const ProposalsView = () => (
                     <li><b>Pet Restrictions:</b> Homeowners ensure tenants comply with HOA pet policies.</li>
                     <li><b>Clarifying Pond Access:</b> Our bylaws clearly state that only members can use the pond, yet rental advertisements list pond access to tenants as an amenity.</li>
                     <li><b>Certificate of Insurance:</b> Require landlords to submit a certificate of homeowner’s liability insurance with the HOA.</li>
+                    <li><b>Limited Parking for Non-Owners:</b> Rental properties are limited to a maximum number of vehicles, and tenant vehicles must be registered with the HOA.</li>
+                    <li><b>Rental Permit Requirement:</b> Homeowners must obtain an HOA rental permit before leasing their property. The permit must be renewed annually.</li>
+                    <li><b>Security Deposit for HOA Violations:</b> Homeowners of rental properties must provide the HOA with a refundable security deposit to cover potential fines or damages caused by tenants.</li>
+                    <li><b>Monthly Rental Compliance Fee:</b> Rental properties are subject to a monthly HOA compliance fee to cover the costs of additional oversight and enforcement.</li>
+                    <li><b>Tenant Registration Fee:</b> Homeowners renting out properties must pay a tenant registration fee to the HOA for each new tenant. This fee covers administrative costs related to tenant oversight.</li>
+                    <li><b>Annual Rental Renewal Forms:</b> Homeowners must submit an annual rental renewal form to the HOA, detailing tenant information, lease terms, and proof of compliance with HOA rules.</li>
+                    <li><b>Detailed Lease Agreement Submission:</b> Homeowners must submit a copy of the tenant lease agreement to the HOA for review to ensure it includes clauses about adhering to HOA rules.</li>
+                    <li><b>Increased HOA Dues for Rental Properties:</b> Rental properties are subject to higher HOA dues to cover the additional administrative and enforcement costs associated with non-owner-occupied properties.</li>
+                    <li><b>Detailed Landscaping Plans:</b> Homeowners renting properties must submit an annual landscaping plan for HOA approval, detailing how the property will meet community standards.</li>
                     <li><b>Clarifying HOA Eviction Rights:</b> Ensure the HOA has clear authority under Illinois law to take enforcement action, including eviction, for tenant violations that materially impact the community.</li>
                 </ul>
             </div>
