@@ -45,6 +45,20 @@ const ProposalsView = () => (
                     <li><b>HOA Orientation Requirement:</b> New tenants must complete an HOA orientation session within 30 days of move-in to learn about community rules and expectations.</li>
                     <li><b>Homeowner Contact Requirement:</b> Homeowners must provide a 24/7 contact for tenant-related issues.</li>
                     <li><b>Tenant Emergency Contact Update:</b> Homeowners must provide updated tenant emergency contacts.</li>
+                    <li><b>Minimum Lease Term:</b> Require a lease term of 12 months or longer.</li>
+                    <li><b>Financial Screening:</b> Require landlords to screen tenants based on the portion of the rent the tenant is personally responsible for paying.</li>
+                    <li><b>Rental Cap:</b> Establish a firm maximum percentage of homes (e.g., 10% to 20%) that can be rented at any given time.</li>
+                    <li><b>Owner Occupancy Waiting Period:</b> Require a new owner to reside in the home for a minimum period (e.g., 1 or 2 years) before being permitted to lease it.</li>
+                    {/* Updated indentation: increased ml-4 to ml-8 for a clearer visual separation */}
+                    <li>
+                        <b>Required Screening Standards (Applied Uniformly):</b> Mandate that the landlord must perform and document specific, non-discriminatory screening checks, such as:
+                        <ul className="list-disc ml-8 mt-2 space-y-1">
+                            <li><b>Criminal Background Check:</b> The check must comply with Fair Housing guidelines (avoiding blanket bans and focusing on recent, serious offenses related to property or public safety).</li>
+                            <li><b>Eviction History Check:</b> Verify that the tenant has no recent history of eviction or broken lease agreements.</li>
+                            <li><b>Landlord References:</b> Require documented contacts with previous landlords.</li>
+                        </ul>
+                    </li>
+                    {/* End of updated structure */}
                     <li><b>Tenant Move-In/Move-Out Notification:</b> Homeowners must notify the HOA 30 days prior to tenant changes.</li>
                     <li><b>Proactive Property Maintenance:</b> Rental homeowners submit annual maintenance plans demonstrating compliance with HOA property standards.</li>
                     <li><b>Pet Restrictions:</b> Homeowners ensure tenants comply with HOA pet policies.</li>
