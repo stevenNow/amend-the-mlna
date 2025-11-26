@@ -40,6 +40,7 @@ const ProposalsView = () => (
                     Examples of regulations might include:
                 </p>
                 <ul className="list-disc list-inside text-sm text-gray-600 mt-3 space-y-1">
+                    <li><b>Nuisance and Safety Clause:</b> Adopt a clear, specific rule defining excessive nuisance, criminal activity, and/or behavior that seriously impairs the safety, peaceful enjoyment, or general welfare of other residents as an immediate and material default of the HOA rules.</li>
                     <li><b>Tenant Accountability:</b> Homeowners are responsible for tenant violations and must correct them within a specified timeframe.</li>
                     <li><b>Tenant Acknowledgment of Rules:</b> Tenants must acknowledge receipt and understanding of HOA rules prior to move-in.</li>
                     <li><b>HOA Orientation Requirement:</b> New tenants must complete an HOA orientation session within 30 days of move-in to learn about community rules and expectations.</li>
@@ -62,7 +63,7 @@ const ProposalsView = () => (
                     <li><b>Tenant Move-In/Move-Out Notification:</b> Homeowners must notify the HOA 30 days prior to tenant changes.</li>
                     <li><b>Proactive Property Maintenance:</b> Rental homeowners submit annual maintenance plans demonstrating compliance with HOA property standards.</li>
                     <li><b>Pet Restrictions:</b> Homeowners ensure tenants comply with HOA pet policies.</li>
-                    <li><b>Clarifying Pond Access:</b> Our bylaws clearly state that only members can use the pond, yet rental advertisements list pond access to tenants as an amenity.</li>
+                    <li><b>Clarifying Lake Access:</b> Our bylaws clearly state that only members can use the lake, yet rental advertisements list lake access to tenants as an amenity.</li>
                     <li><b>Certificate of Insurance:</b> Require landlords to submit a certificate of homeowner’s liability insurance with the HOA.</li>
                     <li><b>Limited Parking for Non-Owners:</b> Rental properties are limited to a maximum number of vehicles, and tenant vehicles must be registered with the HOA.</li>
                     <li><b>Rental Permit Requirement:</b> Homeowners must obtain an HOA rental permit before leasing their property. The permit must be renewed annually.</li>
