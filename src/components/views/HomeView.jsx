@@ -60,7 +60,7 @@ const HomeView = () => (
         <div className="bg-blue-600 text-white py-12 px-4 sm:px-6 lg:px-8 text-center rounded-2xl mb-10">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl sm:text-5xl font-extrabold mb-3 leading-tight">
-                    Preserve Mallard Lake with Rental Amendments.
+                    Preserve Mallard Lake with Rental Amendments
                 </h2>
                 <p className="text-xl opacity-90 mt-4 max-w-2xl mx-auto">
                     Secure our property values and preserve the quality of life in our community.
