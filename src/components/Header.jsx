@@ -6,6 +6,7 @@ const Header = ({ activeView, setActiveView }) => {
         { id: 'home', label: 'Rentals' },
         { id: 'proposals', label: 'Options' },
         { id: 'committee', label: 'Committee'},
+        { id: 'documents', label: 'Documents'},
     ];
 
     const handleClick = (viewId) => {

@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import HomeView from './components/views/HomeView';
 import ProposalsView from './components/views/ProposalsView';
 import CommitteeView from './components/views/CommitteeView';
+import MinutesView from './components/views/MinutesView';
 import './styles.css'; // Import the custom styles
 
 const App = () => {
@@ -29,6 +30,8 @@ const App = () => {
                 return <ProposalsView />;
             case 'committee':
                 return <CommitteeView />;
+            case 'documents':
+                return <MinutesView />;
             case 'home':
             default:
                 return <HomeView />;
