@@ -24,6 +24,15 @@ const staticDocuments = [
     },
 ];
 
+const bylaws =  [
+    {
+        id: '11-5-1999',
+        title: 'Ammendment to the Bylaws of Mallard Lake North Association',
+        date: new Date(1999, 11, 5),
+        url: '/bylaws/1999.pdf', // Placeholder for PDF in your repo
+    },
+]
+
 
 // =================================================================
 // MinutesList Component: Renders the list of minutes with links to files
@@ -45,6 +54,35 @@ const MinutesList = ({ minutes }) => (
                     </div>
                     <a
                         href={minute.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 ml-4 py-2 px-4 rounded-lg font-semibold text-white bg-green-600 hover:bg-green-700 transition-colors shadow-md"
+                    >
+                        View Document
+                    </a>
+                </div>
+            ))
+        )}
+    </div>
+);
+
+const BylawsList = ({ bylaws }) => (
+    <div className="space-y-6">
+        {bylaws.length === 0 ? (
+            <div className="text-center p-12 bg-gray-100 rounded-xl text-gray-500">
+                No archived documents found.
+            </div>
+        ) : (
+            bylaws.map((bylaw) => (
+                <div key={bylaw.id} className="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500 flex justify-between items-center transition duration-200 hover:shadow-lg">
+                    <div className="flex-1 min-w-0">
+                        <h3 className="text-xl font-bold text-gray-800 mb-1">{bylaw.title}</h3>
+                        <p className="text-sm text-blue-500">
+                            Date: {formatDate(bylaw.date)}
+                        </p>
+                    </div>
+                    <a
+                        href={bylaw.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-shrink-0 ml-4 py-2 px-4 rounded-lg font-semibold text-white bg-green-600 hover:bg-green-700 transition-colors shadow-md"
@@ -82,8 +120,14 @@ const MinutesView = () => {
 
             <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Archived Documents</h2>
 
-            {(
+            <div className="mb-12"> {/* Added margin bottom here */}
                 <MinutesList minutes={minutes} />
+            </div>
+
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Bylaws</h2>
+
+            {(
+                <BylawsList bylaws={bylaws} />
             )}
         </section>
     );

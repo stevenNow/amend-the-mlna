@@ -30,7 +30,7 @@ const App = () => {
                 return <ProposalsView />;
             case 'committee':
                 return <CommitteeView />;
-            case 'minutes':
+            case 'documents':
                 return <MinutesView />;
             case 'home':
             default:
