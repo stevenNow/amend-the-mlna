@@ -45,7 +45,7 @@ const CommitteeView = () => (
                             <span className="font-semibold text-blue-600">Educate & Communicate:</span> To provide all homeowners with transparent, factual information regarding the amendments, the process, and the data supporting these changes.
                         </li>
                         <li>
-                            <span className="font-semibold text-blue-600">Faciliate Legal Review:</span> To present reccommendations to the MLNA for final review, before our requirements are formally submitted to an attorney.
+                            <span className="font-semibold text-blue-600">Faciliate Legal Review:</span> To present recommendations to the MLNA for final review, before our requirements are formally submitted to an attorney.
                         </li>
                     </ol>
                 </div>
