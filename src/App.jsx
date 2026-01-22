@@ -38,19 +38,23 @@ const App = () => {
         }
     };
 
-    return (
-        <div className="text-gray-800 pt-16">
-            {/* Header passes down the view state and the function to change it */}
-            <Header activeView={activeView} setActiveView={setActiveView} />
+   return (
+    /* min-h-screen: Makes the app at least as tall as the screen
+       flex flex-col: Allows the main area to "grow" and push the footer down
+    */
+    <div className="text-gray-800 pt-16 min-h-screen flex flex-col">
+        <Header activeView={activeView} setActiveView={setActiveView} />
 
-            {/* Main Content Area */}
-            <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                {renderView()}
-            </main>
-            
-            <Footer />
-        </div>
-    );
+        {/* flex-grow: This tells the main content to take up all available 
+           remaining space, forcing the Footer to the very bottom.
+        */}
+        <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow">
+            {renderView()}
+        </main>
+        
+        <Footer />
+    </div>
+);
 };
 
 export default App;
