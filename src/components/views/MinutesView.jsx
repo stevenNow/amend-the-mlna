@@ -20,7 +20,7 @@ const staticDocuments = [
         id: '07-22-2025',
         title: 'July 2025 Board Meeting Minutes',
         date: new Date(2025, 6, 22),
-        url: '/minutes/07_22_2025 Board Meeting Minutes.pdf', // Placeholder for PDF in your repo
+        url: '/minutes/07-22-2025.pdf', // Placeholder for PDF in your repo
     },
 ];
 
@@ -28,7 +28,7 @@ const bylaws =  [
     {
         id: '11-5-1999',
         title: 'Ammendment to the Bylaws of Mallard Lake North Association',
-        date: new Date(1999, 11, 5),
+        date: new Date(1999, 10, 5),
         url: '/bylaws/1999.pdf', // Placeholder for PDF in your repo
     },
 ]
