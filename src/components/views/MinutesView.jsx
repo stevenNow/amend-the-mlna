@@ -22,6 +22,12 @@ const staticDocuments = [
         date: new Date(2025, 6, 22),
         url: '/minutes/07-22-2025.pdf', // Placeholder for PDF in your repo
     },
+    {
+        id: '04-13-2025',
+        title: 'April 2025 Board Meeting Minutes',
+        date: new Date(2025, 3, 13),
+        url: '/minutes/04-13-2025.pdf', // Placeholder for PDF in your repo
+    },
 ];
 
 const bylaws =  [
