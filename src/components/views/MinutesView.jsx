@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import logo from '../../assets/logo.png'
 // Helper function to format date - still useful for presentation
 const formatDate = (timestamp) => {
     if (!timestamp) return 'N/A';
@@ -115,7 +115,7 @@ const MinutesView = () => {
                 Official Meeting Minutes & Documents
             </h1>
             <p className="text-center text-gray-600 mb-8">
-                Click "View Document" to open the PDF or Word file in a new tab.
+                Click "View Document" to open the PDF file in a new tab.
             </p>
 
             <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Archived Documents</h2>
@@ -129,6 +129,14 @@ const MinutesView = () => {
             {(
                 <BylawsList bylaws={bylaws} />
             )}
+            {/* --- Image Placeholder Section --- */}
+            <div className="mt-16">
+                    <img 
+                        src={logo} 
+                        alt="MMLNA Logo" 
+                        className="w-full h-full object-cover rounded-xl shadow-lg"
+                    />              
+            </div>
         </section>
     );
 };
