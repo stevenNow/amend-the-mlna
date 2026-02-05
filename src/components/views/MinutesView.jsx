@@ -28,6 +28,12 @@ const staticDocuments = [
         date: new Date(2025, 3, 13),
         url: '/minutes/04-13-2025.pdf', // Placeholder for PDF in your repo
     },
+    {
+        id: '11-12-2024',
+        title: 'November 2024 Board Meeting Minutes',
+        date: new Date(2024, 10, 12),
+        url: '/minutes/11-12-2024.pdf', // Placeholder for PDF in your repo
+    },
 ];
 
 const bylaws =  [
