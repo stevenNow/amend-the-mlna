@@ -17,6 +17,12 @@ const formatDate = (timestamp) => {
 
 const staticDocuments = [
     {
+        id: 'mlna-rental-committee-03-02-2026',
+        title: 'MLNA Rental Commitee Meeting 1',
+        date: new Date(2026, 2, 2),
+        url: '/minutes/MLNA-Rental-Committee-03-02-2026.pdf', // Placeholder for PDF in your repo
+    },
+    {
         id: '11-20-2025',
         title: 'November 2025 Board Meeting Minutes',
         date: new Date(2025, 10, 20),
