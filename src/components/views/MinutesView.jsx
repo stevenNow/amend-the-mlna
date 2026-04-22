@@ -55,6 +55,12 @@ const bylaws =  [
         date: new Date(1999, 10, 5),
         url: '/bylaws/1999.pdf', // Placeholder for PDF in your repo
     },
+    {
+        id: '03-9-1971',
+        title: 'MLNA Declaration',
+        date: new Date(1971, 2, 9),
+        url: '/bylaws/1971.pdf', // Placeholder for PDF in your repo
+    },
 ]
 
 
